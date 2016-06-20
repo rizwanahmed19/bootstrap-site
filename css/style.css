@@ -251,3 +251,16 @@ section.about {
 .footer a {
 	color: #f2f2f2;
 }
+.footer .heart {
+	color: #f00;
+	font-size: 14px;
+}
+.footer .name b {
+	font-size: 14px;
+	font-family: 'Lato', sans-serif;
+}
+.footer .name {
+	padding-top: 20px;
+	padding-bottom: 0px;
+
+}
