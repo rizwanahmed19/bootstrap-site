@@ -38,7 +38,7 @@
       <div class="container">
         
         <div class="navbar-header">
-          <a href="#" id="brand" class="navbar-brand">LOGO</a>
+          <a href="#homeSection" id="home" class="navbar-brand">LOGO</a>
           <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -49,13 +49,13 @@
 
         <div  class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about">About</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#press">Press</a></li>
-            <li><a href="#screenshots">Screens</a></li>
-            <li><a href="#reviews">Reviews</a></li>
-            <li><a href="#buy">Downloads</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a id="about" href="#aboutSection">About</a></li>
+            <li><a id="features" href="#featuresSection">Features</a></li>
+            <li><a id="press" href="#pressSection">Press</a></li>
+            <li><a id="screenshots" href="#screenshotsSection">Screens</a></li>
+            <li><a id="reviews" href="#reviewsSection">Reviews</a></li>
+            <li><a id="buy" href="#buySection">Downloads</a></li>
+            <li><a id="contact" href="#contactSection">Contact</a></li>
           </ul>
         </div>
 
@@ -66,7 +66,7 @@
     
   <!-- HEADER -->
     
-    <header>
+    <header id="homeSection">
       <div class="container">
         <div class="row">
           
@@ -91,7 +91,7 @@
   <!-- HEADER FINISHED -->
 
   <!-- ABOUT -->
-    <section class="about" id="about">
+    <section class="about" id="aboutSection">
       <div class="container">
         
         <div class="row">
@@ -136,7 +136,7 @@
    <!-- ABOUT FINISHED -->
 
   <!-- FEATURES -->
-    <section class="features" id="features">
+    <section class="features" id="featuresSection">
       <div class="container">
         
         <div class="row">
@@ -190,7 +190,7 @@
   <!-- FEATURES FINISHED -->
   
   <!-- PRESS -->
-    <section class="press" id="press">
+    <section class="press" id="pressSection">
       <div class="container">
 
         <div class="row">
@@ -231,7 +231,7 @@
     <!-- PRESS FINISHED -->
 
     <!-- SCREENSHOTS -->
-      <section class="screenshots" id="screenshots">
+      <section class="screenshots" id="screenshotsSection">
         <div class="container">
           
           <div class="row">
@@ -263,7 +263,7 @@
     <!-- SCREENSHOTS FINISHED-->
 
     <!-- REVIEWS -->
-      <section class="reviews" id="reviews">
+      <section class="reviews" id="reviewsSection">
         <div class="container">
           
           <div class="row">
@@ -318,7 +318,7 @@
     <!-- REVIEWS FINISHED-->
     
     <!-- BUY -->
-    <section class="buy" id="buy">
+    <section class="buy" id="buySection">
       <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12">
@@ -340,7 +340,7 @@
     <!-- BUY FINISHED -->
 
     <!-- CONTACT -->
-      <section class="contact" id="contact">
+      <section class="contact" id="contactSection">
         <div class="container">
           <div class="row">
             <h1>CONTACT US:</h1>
@@ -409,10 +409,11 @@
     <script>
       new WOW().init();
     </script>
+    <script src="js/scrolling.js"></script>
     <script src="js/script.js"></script>
     <script type="text/javascript">
       window.addEventListener('scroll', function(){
-        if(window.pageYOffset >= 700){
+        if(window.pageYOffset >= 680){
           document.getElementById('myNavbar').style.backgroundColor="rgba(0, 0, 0, 0.8)";
         }
         else
