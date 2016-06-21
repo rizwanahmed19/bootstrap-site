@@ -12,23 +12,36 @@ body {
 
 /* ----- NAVIGATION ----- */
 .navbar {
-	border-bottom: 1px solid #b9b9b9;
+	/*border-bottom: 1px solid #b9b9b9;*/
 	font-family: 'Lato', sans-serif;
+	background-color: transparent;
+	border: none;
+	transition: background 0.5s ease !important;
 } 
+.navbar button {
+	background-color: transparent !important;
+}
 .navbar a {
 	color: #ccc !important;
+	font-size: 1.2em;
 }
 .navbar a:hover {
-	color: #fff !important;
-	background-color: #646464 !important;
+	color: #f39c12 !important;
+	/*background-color: #646464 !important;*/
 }
 .navbar-header .navbar-brand {
-	color: #fff !important;
-	font-size: 1.6em !important;
+	color: #f39c12 !important;
+	font-size: 2.5em !important;
+	letter-spacing: 4px;
 }
 nav .nav li.active a{
-	background-color: #F2F1F1 !important;
-	color: #000 !important;
+	background-color: transparent !important;
+	color: #f39c12 !important;
+}
+@media(max-width: 768px) {
+	.navbar {
+		background-color: rgba(0, 0, 0, 0.8) !important;
+	}
 }
 
 /* ----- HEADER ----- */
@@ -253,7 +266,7 @@ section.about {
 }
 .footer .heart {
 	color: #f00;
-	font-size: 14px;
+	font-size: 14	px;
 }
 .footer .name b {
 	font-size: 14px;
