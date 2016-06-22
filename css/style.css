@@ -9,7 +9,6 @@ p, h1 {
 body {
 	position: relative;
 }
-
 /* ----- NAVIGATION ----- */
 .navbar {
 	/*border-bottom: 1px solid #b9b9b9;*/
@@ -33,6 +32,13 @@ body {
 	color: #f39c12 !important;
 	font-size: 2.5em !important;
 	letter-spacing: 4px;
+	padding-left: 10px;
+	padding-right: 10px; 
+	transition: letter-spacing 0.2s ease, font-size 0.2s ease;
+}
+.navbar-header .navbar-brand:hover {
+	letter-spacing: 1px;
+	font-size: 2em !important;
 }
 nav .nav li.active a{
 	background-color: transparent !important;
@@ -51,16 +57,15 @@ header {
 	background: url(../img/bg.jpg);
 	background-position: center;
 	background-size: cover;
-	/*width: 100%;*/
 	border-bottom: 2px solid #c9c9c9; 
 }
 header h1 {
-	color: white;
+	color: #fff;
 	font-family: 'Pacifico', sans-serif;
 	font-size: 7.5em;
 }
 header p {
-	color: white;
+	color: #fff;
 	font-size: 1.3em;
 	font-family: 'Droid Sans', sans-serif;
 	line-height: 145%;
